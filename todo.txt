@@ -1,0 +1,5 @@
+Intermediate data for signal generation. Plot time series, amtch with signal time and overlay signals. No need to plot it as a seperate line.
+Generate a histogram of teh signal vs the market. 
+Fix each of the strategies as non of them are creating signals no i think they are all messed up in the calling aspect
+Make sure that VTS is set up correctly in backtester and with teh other signals in its class
+Then look at making sure that the code is eturning so

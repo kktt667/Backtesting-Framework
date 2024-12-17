@@ -1,0 +1,58 @@
+FIXES:
+
+SIGNALS.CSV - get rid of duplicate signals, make sure sim testing works
+Output of results cleaned up in a table
+fix issue with graph returning line plot of just signals not with price
+close error when running bb on its own
+fix the vts error, basic logic is there but isnt incorporated correctly
+ensure RSI works correctly, rewrite with the standardised format
+export to aws or some other public server
+
+
+Chnage the logic in app b. Basically if MORE THAN ONE indicators are present. WE need the results for THE TOTAL SIGNALS FILE. it is getting wiped somewher ei need to find that. Basically once it is suc
+
+
+fix the vts problem and go through all the code looking for defaults and dumb shi 
+
+CUMMULATIVE RETURNS IS NOT BEING CALCULATED ACCURATELY ANYWHERE. IT IS ASSUMED TO BE IN THE DATA FRAME. LOOK AT BOLLINGER BANDS AND FIX THIS SIIUE. 
+
+
+bro why does bollinger bands have two differentt types of optimisation and walk forward twice its silly 
+
+Okay so when we backtest we need to try make use of percentage ranges. 
+
+look at the metrics:
+sharpe ratio, sortino ratio calmar ratio Max. drawdown
+avg. drawdown
+max drawdown time
+average drawdown time
+win rate %
+best trade%
+worst trade%
+avg trade duration
+max trade duration
+profit factor.
+return
+buy and hold return
+
+Look at the code for this indicator.Make sure that the code is structured in a set generalisable way. So that i can follow this structure with 
+other indicator classes such as Average True Range. Now make sure the code is in a logical order and everything works as expected.
+Ensure no default values are being used and the optimised parameters are being used to accurately genrate teh signals. Ensure that no double 
+signals are being created and everything is being recorded properly. We need to ensure we have data efficiency in terms of hanling creating and calling the correct data frames and structues.
+Lastly, look to make sure that the code is completing its function and is working in a logical order. I need to make sure that the flow logic and mathematics is absolutly sound. 
+Make sure teh optimisation process makes sense and is efficient in what it is doing. It should be running grid dearch on each possible parameter combination based on highest cummulative RETURNS.
+This should select the best parameter. 
+
+Remove redudndant code between backtester and the appb.py 
+
+ROC AND ATR WORK EVRYTHING ELSE IS BULL
+
+
+
+FOR THE DEVELOPMENT DIARY
+**********************************************
+REMOVE THE LAST PART OF APPB AND JUST SHOW INTERFACE WITH GO BUTTON. dUNPLICATE THE APP AND AHOW A RUNNING VERSION OF EMPTY INTERFACE WITH NO CLASSES ATTACHED. We can then show development fr each class on eby one,
+caching of assets make it b first stage.
+Then we can make it more prototype and ask chatgpt
+
+CACHED ASSET IS WRONG CHECK API ENDPOINT FOR BINANCE IT DONT WORK.
