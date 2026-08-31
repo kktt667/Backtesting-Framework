@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+venv/
+.env
+
+# personal working notes
+plan.txt
+todo.txt
+
+# generated signal/backtest output
+SIGNALS_FILE.csv
+*_signals.csv
